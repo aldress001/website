@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مركز الدريس لصيانة السيارات | AL DREES 4 CARS</title>
+<meta name="description" content="مركز الدريس لصيانة السيارات — كهرباء، ميكانيكا، سمكرة وبوهية. خدمة متكاملة بجودة واهتمام بالتفاصيل.">
+<meta name="theme-color" content="#04101F">
+<meta property="og:type" content="website"><meta property="og:locale" content="ar_SA">
+<meta property="og:title" content="مركز الدريس لصيانة السيارات | AL DREES 4 CARS">
+<meta property="og:description" content="كهرباء، ميكانيكا، سمكرة وبوهية — خدمة متكاملة لسيارتك.">
+<!-- ⚠️ بعد رفع الموقع غيّر الرابط التالي إلى رابط كامل: https://دومينك/og.jpg -->
+<meta property="og:image" content="./og.jpg">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="apple-touch-icon" href="./favicon.png">
+<link rel="preload" as="image" href="./hero.jpg" fetchpriority="high">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"مركز الدريس لصيانة السيارات","alternateName":"AL DREES 4 CARS","telephone":"+966538999056","sameAs":["https://www.tiktok.com/@aldrees4cars","https://snapchat.com/t/Qqh3QoXN"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===================== المتغيرات والأساسيات ===================== */
+:root{
+  --navy-950:#04101F; --navy-900:#071A33; --navy-800:#0A2444; --navy-700:#0E3158;
+  --blue-600:#0E63C8; --blue-500:#1273EB; --blue-400:#3E97FF; --cyan:#6CC9FF;
+  --ice:#F3F8FD; --line:#DCE8F5; --ink:#0B2545; --muted:#5B7396;
+  --display:'Changa',sans-serif; --body:'Tajawal',sans-serif;
+  --ease:cubic-bezier(.22,.75,.15,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--body);color:var(--ink);background:#fff;line-height:1.7;overflow-x:clip}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--blue-500);color:#fff}
+section{scroll-margin-top:92px}
+.wrap{width:min(1180px,92%);margin-inline:auto}
+.display{font-family:var(--display)}
+
+/* حبيبات (Noise) خفيفة فوق كل الصفحة */
+.noise{position:fixed;inset:0;pointer-events:none;z-index:9990;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+
+/* ===================== الظهور عند التمرير ===================== */
+.js .io.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.io.reveal.in{opacity:1;transform:none}
+.lm{display:block;overflow:hidden}
+.js .lm>span{display:block;transform:translateY(115%);transition:transform 1s var(--ease);transition-delay:var(--d,0s)}
+.io.in .lm>span{transform:none}
+
+/* ===================== الشريط العلوي ===================== */
+.topbar{background:var(--navy-950);color:#B9CFE8;font-size:.82rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0}
+.topbar a{transition:color .25s}
+.topbar a:hover{color:#fff}
+.topbar .tb-social{display:flex;gap:1rem;align-items:center}
+.topbar .tb-phone{display:flex;gap:.5rem;align-items:center;font-weight:700}
+.topbar .tb-phone b{color:#fff;letter-spacing:.5px}
+
+/* ===================== التنقل ===================== */
+.nav{position:sticky;top:0;z-index:1000;color:#fff;transition:background .35s,box-shadow .35s,color .35s;padding:.9rem 0}
+.nav.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 10px 30px rgba(7,26,51,.09);padding:.6rem 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.logo{display:flex;align-items:center;gap:.7rem}
+.logo-mark{width:46px;height:46px;border-radius:13px;background:linear-gradient(140deg,var(--blue-500),var(--blue-600));display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:800;font-size:1.5rem;box-shadow:0 8px 18px rgba(18,115,235,.35);position:relative;overflow:hidden;flex:0 0 46px}
+/* 🖼️ logo.png — يظهر فوق الحرف تلقائيًا عند توفره */
+.logo-mark .logo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit}
+.logo-mark::after{content:'';position:absolute;inset:3px;border-radius:10px;border:1.5px solid rgba(255,255,255,.35);pointer-events:none}
+.logo-txt strong{font-family:var(--display);font-size:1.15rem;font-weight:800;display:block;line-height:1.2}
+.logo-txt small{display:block;font-size:.62rem;letter-spacing:3px;opacity:.75;font-weight:700}
+.nav-links{display:flex;gap:1.9rem;font-weight:700;font-size:.95rem}
+.nav-links a{position:relative;padding:.3rem 0;opacity:.88;transition:opacity .25s}
+.nav-links a::after{content:'';position:absolute;bottom:0;right:0;width:0;height:2px;background:var(--blue-500);border-radius:2px;transition:width .3s var(--ease)}
+.nav-links a:hover,.nav-links a.active{opacity:1}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-side{display:flex;align-items:center;gap:.9rem}
+.nav .social-dot{width:36px;height:36px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-size:.95rem;opacity:.8;transition:.3s}
+.nav .social-dot:hover{opacity:1;background:var(--blue-500);border-color:var(--blue-500);color:#fff;transform:translateY(-2px)}
+.burger{display:none;background:none;border:none;color:inherit;font-size:1.5rem;line-height:1}
+
+/* قائمة الجوال */
+.m-menu{position:fixed;inset:0;z-index:2000;background:linear-gradient(160deg,var(--navy-950),var(--navy-800));color:#fff;display:flex;flex-direction:column;padding:1.4rem 6%;opacity:0;visibility:hidden;transform:translateY(-14px);transition:.4s var(--ease)}
+.m-menu.open{opacity:1;visibility:visible;transform:none}
+.m-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:2.5rem}
+.m-close{background:none;border:1.5px solid rgba(255,255,255,.35);color:#fff;width:42px;height:42px;border-radius:50%;font-size:1.2rem}
+.m-menu nav{display:flex;flex-direction:column;gap:.4rem}
+.m-menu nav a{font-family:var(--display);font-size:2rem;font-weight:700;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.09);display:flex;justify-content:space-between;align-items:center;transition:.25s}
+.m-menu nav a:hover{color:var(--cyan);padding-right:.6rem}
+.m-menu nav a span{font-size:.85rem;opacity:.45;font-family:var(--body)}
+.m-foot{margin-top:auto;display:flex;gap:.8rem;flex-wrap:wrap}
+
+/* ===================== الأزرار ===================== */
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:800;font-size:1rem;padding:.9rem 1.7rem;border-radius:14px;border:none;position:relative;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.btn::after{content:'';position:absolute;top:0;bottom:0;width:45%;right:-70%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-18deg);transition:right .6s var(--ease)}
+.btn:hover::after{right:130%}
+.btn-primary{background:linear-gradient(135deg,var(--blue-500),var(--blue-600));color:#fff;box-shadow:0 12px 26px rgba(18,115,235,.35)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(18,115,235,.45)}
+.btn-ghost{background:transparent;color:currentColor;border:1.8px solid currentColor}
+.btn-ghost:hover{transform:translateY(-3px)}
+.btn .wa-ic{width:20px;height:20px;fill:currentColor}
+
+/* ===================== الترويسة (Hero) ===================== */
+.hero{position:relative;background:linear-gradient(165deg,var(--navy-950) 0%,var(--navy-900) 55%,var(--navy-800) 100%);color:#fff;padding:5rem 0 7.5rem;overflow:hidden}
+/* 🖼️ hero.jpg — خلفية خافتة فاخرة */
+.hero-photo{position:absolute;inset:0;background:url('./hero.jpg') center/cover no-repeat;opacity:.25;mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%)}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(108,201,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(108,201,255,.06) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 90% 80% at 60% 20%,#000 30%,transparent 75%)}
+.hero-glow{position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(18,115,235,.28),transparent 65%);top:-180px;left:-140px;pointer-events:none}
+.hero-glow.g2{width:420px;height:420px;background:radial-gradient(circle,rgba(108,201,255,.14),transparent 65%);top:auto;left:auto;bottom:-160px;right:-100px}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:3.5rem;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:.7rem;font-weight:700;color:var(--cyan);font-size:.95rem;margin-bottom:1.2rem}
+.kicker::before{content:'';width:38px;height:2px;background:var(--cyan);border-radius:2px}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:1.22}
+.hero h1 .hl{font-style:normal;color:var(--cyan);position:relative;white-space:nowrap}
+.hero h1 .hl::after{content:'';position:absolute;right:0;left:0;bottom:.08em;height:.28em;background:rgba(18,115,235,.45);z-index:-1;border-radius:4px}
+.hero .lead{color:#B9CFE8;font-size:1.12rem;max-width:34rem;margin:1.3rem 0 2rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+.trust{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:2.4rem;padding-top:1.8rem;border-top:1px solid rgba(255,255,255,.12)}
+.trust li{display:flex;gap:.7rem;align-items:flex-start}
+.trust b{width:34px;height:34px;flex:0 0 34px;border-radius:10px;background:rgba(18,115,235,.22);border:1px solid rgba(108,201,255,.35);display:grid;place-items:center;color:var(--cyan);font-size:.95rem}
+.trust strong{display:block;font-size:.95rem}
+.trust span{font-size:.8rem;color:#8FA9C9}
+.hero-watermark{position:absolute;bottom:-2.4rem;left:0;font-family:var(--display);font-weight:800;font-size:clamp(5rem,15vw,13rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(108,201,255,.13);pointer-events:none;user-select:none;white-space:nowrap;direction:ltr;z-index:1}
+
+/* بطاقة أمر الشغل */
+.order-card{background:#fff;color:var(--ink);border-radius:22px;padding:1.7rem 1.6rem 1.6rem;box-shadow:0 30px 70px rgba(4,16,31,.45);position:relative;transform:rotate(-1deg)}
+.order-card::before{content:'';position:absolute;inset-inline-start:-14px;top:26px;bottom:26px;width:6px;border-radius:6px;background:repeating-linear-gradient(180deg,var(--blue-500) 0 12px,transparent 12px 20px)}
+.order-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.1rem}
+.plate{display:inline-flex;align-items:center;gap:.55rem;background:var(--ice);border:2px solid var(--blue-600);border-radius:9px;padding:.28rem .75rem;font-weight:800;color:var(--blue-600);font-size:.85rem}
+.plate i{font-style:normal;background:var(--blue-600);color:#fff;border-radius:5px;padding:0 .45rem;font-size:.72rem;letter-spacing:1px}
+.order-no{font-family:var(--display);color:#B6C8DE;font-weight:700;font-size:.85rem;letter-spacing:1px;direction:ltr}
+.order-card h3{font-family:var(--display);font-size:1.3rem;font-weight:700;margin-bottom:1.1rem}
+.fgroup{margin-bottom:1rem}
+.flabel{display:block;font-size:.8rem;font-weight:800;color:var(--muted);margin-bottom:.45rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{position:relative}
+.chips input,.seg input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chips span{display:inline-block;padding:.48rem .95rem;border:1.6px solid var(--line);border-radius:999px;font-size:.85rem;font-weight:700;background:#fff;transition:.25s var(--ease)}
+.chips input:checked+span{background:var(--blue-600);border-color:var(--blue-600);color:#fff;box-shadow:0 8px 18px rgba(18,115,235,.32);transform:translateY(-1px)}
+.chips input:focus-visible+span,.seg input:focus-visible+span{outline:2px solid var(--blue-400);outline-offset:2px}
+select{width:100%;padding:.68rem .9rem;border:1.6px solid var(--line);border-radius:12px;font-family:inherit;font-weight:700;font-size:.9rem;color:var(--ink);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230E63C8' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat left .9rem center;appearance:none;transition:border-color .25s}
+select:focus{outline:none;border-color:var(--blue-500)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.seg{display:flex;background:var(--ice);border:1.6px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg label{flex:1;position:relative}
+.seg span{display:block;text-align:center;padding:.45rem .4rem;border-radius:9px;font-size:.85rem;font-weight:800;color:var(--muted);transition:.25s}
+.seg input:checked+span{background:var(--blue-600);color:#fff;box-shadow:0 6px 14px rgba(18,115,235,.3)}
+.seg.prio input:checked+span{background:var(--navy-900)}
+.order-btn{width:100%;justify-content:center;font-size:1.05rem;padding:1rem;border-radius:14px;margin-top:.4rem}
+.order-note{text-align:center;font-size:.78rem;color:var(--muted);margin-top:.7rem}
+
+/* ===================== الشريط المتحرك ===================== */
+.ticker{background:linear-gradient(90deg,var(--blue-600),var(--blue-500));color:#fff;transform:rotate(-1.1deg) scale(1.02);position:relative;z-index:6;margin-top:-2.4rem;border-block:3px solid #fff;box-shadow:0 16px 34px rgba(4,16,31,.22);overflow:hidden}
+.ticker-track{display:flex;width:max-content;animation:tick 30s linear infinite}
+.ticker-track>div{display:flex;align-items:center;white-space:nowrap;font-family:var(--display);font-weight:600;font-size:1.02rem}
+.ticker-track b{padding:.85rem 1.4rem;display:flex;align-items:center;gap:1.4rem}
+.ticker-track b::after{content:'✦';color:var(--cyan);font-size:.8rem}
+@keyframes tick{to{transform:translateX(50%)}}
+
+/* ===================== الأرقام ===================== */
+.stats{background:#fff;padding:4rem 0 3rem}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1.5px solid var(--line);border-radius:22px;overflow:hidden}
+.stat{padding:2.2rem 1.8rem;text-align:center;position:relative;background:linear-gradient(180deg,#fff,var(--ice))}
+.stat+.stat{border-inline-start:1.5px solid var(--line)}
+.stat b{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,4.5vw,3.6rem);color:var(--blue-600);line-height:1;display:block}
+.stat span{display:block;margin-top:.5rem;font-weight:700;color:var(--ink)}
+.stat small{display:block;color:var(--muted);font-size:.85rem}
+
+/* ===================== رؤوس الأقسام ===================== */
+.sec-head{margin-bottom:3.2rem;position:relative}
+.sec-kicker{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:600;color:var(--blue-500);letter-spacing:1px;font-size:.95rem}
+.sec-kicker::before{content:'';width:34px;height:2px;background:var(--blue-500);border-radius:2px}
+.sec-title{font-family:var(--display);font-weight:800;font-size:clamp(2rem,4vw,3.1rem);line-height:1.3;margin-top:.4rem}
+.sec-sub{color:var(--muted);font-size:1.08rem;max-width:36rem;margin-top:.6rem}
+.sec-link{display:inline-flex;align-items:center;gap:.4rem;font-weight:800;color:var(--blue-600);margin-top:1rem;transition:gap .3s}
+.sec-link:hover{gap:.8rem}
+
+/* ===================== الخدمات ===================== */
+.services{padding:6.5rem 0;background:linear-gradient(180deg,#fff,var(--ice))}
+.svc-list{border-top:1.5px solid var(--line)}
+.svc{display:grid;grid-template-columns:150px 1fr auto;gap:2.2rem;align-items:center;padding:2.3rem 1.6rem;border-bottom:1.5px solid var(--line);position:relative;overflow:hidden;transition:.3s}
+.svc::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,var(--navy-900) 30%,var(--blue-600));transform:translateY(102%);transition:transform .55s var(--ease);z-index:0}
+.svc:hover::before{transform:translateY(0)}
+.svc>*{position:relative;z-index:1}
+.svc-num{font-family:var(--display);font-weight:800;font-size:3.6rem;line-height:1;color:transparent;-webkit-text-stroke:1.6px var(--blue-500);transition:.4s;direction:ltr;text-align:center}
+.svc:hover .svc-num{-webkit-text-stroke-color:var(--cyan);transform:scale(1.06)}
+.svc-body h3{font-family:var(--display);font-size:1.55rem;font-weight:700;display:flex;align-items:center;gap:.7rem;transition:color .3s}
+.svc-body h3 .svc-ico{width:42px;height:42px;flex:0 0 42px;border-radius:12px;background:rgba(18,115,235,.1);border:1.5px solid rgba(18,115,235,.25);display:grid;place-items:center;font-size:1.2rem;transition:.3s}
+.svc:hover .svc-body h3{color:#fff}
+.svc:hover .svc-body h3 .svc-ico{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3)}
+.svc-body p{color:var(--muted);margin:.4rem 0 .8rem;max-width:44rem;transition:color .3s}
+.svc:hover .svc-body p{color:#B9CFE8}
+.svc-tags{display:flex;flex-wrap:wrap;gap:.45rem}
+.svc-tags li{font-size:.78rem;font-weight:700;padding:.28rem .75rem;border-radius:999px;background:#fff;border:1.5px solid var(--line);color:var(--blue-600);transition:.3s}
+.svc:hover .svc-tags li{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff}
+.svc-cta{font-weight:800;font-size:.95rem;color:var(--blue-600);display:flex;align-items:center;gap:.5rem;white-space:nowrap;padding:.7rem 1.2rem;border:1.8px solid var(--blue-500);border-radius:12px;transition:.3s}
+.svc:hover .svc-cta{background:#fff;border-color:#fff;color:var(--blue-600)}
+.svc-cta:hover{gap:.9rem}
+
+/* ===================== قبل وبعد ===================== */
+.projects{background:linear-gradient(165deg,var(--navy-950),var(--navy-800));color:#fff;padding:6.5rem 0;position:relative;overflow:hidden}
+.projects .sec-kicker{color:var(--cyan)}
+.projects .sec-kicker::before{background:var(--cyan)}
+.projects .sec-sub{color:#8FA9C9}
+.projects::before{content:'BEFORE ✕ AFTER';position:absolute;top:2rem;left:-1rem;font-family:var(--display);font-weight:800;font-size:7rem;color:transparent;-webkit-text-stroke:1px rgba(108,201,255,.08);direction:ltr;pointer-events:none}
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.ba-card figcaption{margin-top:1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.ba-card h3{font-family:var(--display);font-size:1.2rem;font-weight:700}
+.ba-card p{color:#8FA9C9;font-size:.88rem}
+.ba-card .ba-num{font-family:var(--display);color:transparent;-webkit-text-stroke:1.2px var(--cyan);font-size:1.9rem;font-weight:800;direction:ltr}
+.ba{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:20px;cursor:ew-resize;user-select:none;-webkit-user-select:none;touch-action:none;background:var(--navy-800);border:1px solid rgba(108,201,255,.18);--pos:62%}
+.ba-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kenburns 16s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.09)}}
+.ba-top{position:absolute;inset:0;clip-path:inset(0 0 0 var(--pos))}
+.ba-top img{width:100%;height:100%;object-fit:cover}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:#fff;box-shadow:0 0 16px rgba(4,16,31,.5);transform:translateX(-50%)}
+.ba-handle{position:absolute;top:50%;left:var(--pos);transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:#fff;color:var(--blue-600);border:none;font-size:1.15rem;font-weight:800;display:grid;place-items:center;box-shadow:0 10px 24px rgba(4,16,31,.45);cursor:ew-resize;transition:transform .2s}
+.ba-handle:hover,.ba-handle:focus-visible{transform:translate(-50%,-50%) scale(1.12)}
+.ba-handle:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.ba-tag{position:absolute;top:14px;padding:.3rem .85rem;border-radius:999px;font-size:.8rem;font-weight:800;background:rgba(4,16,31,.6);color:#fff;backdrop-filter:blur(4px);pointer-events:none}
+.t-before{right:14px}
+.t-after{left:14px;background:var(--blue-600)}
+.ba-hint{text-align:center;margin-top:2.6rem;color:#8FA9C9;font-size:.9rem;display:flex;align-items:center;justify-content:center;gap:.6rem}
+.ba-hint b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1.5px solid rgba(108,201,255,.4);color:var(--cyan);animation:nudge 2.2s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+
+/* ===================== لماذا المركز ===================== */
+.why{padding:6.5rem 0;background:#fff}
+.why-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:4rem;align-items:start}
+.why-sticky{position:sticky;top:110px}
+.why-sticky .sec-sub{max-width:30rem}
+.why-plate{margin-top:2rem;display:inline-flex;align-items:center;gap:.6rem;background:var(--ice);border:2px dashed var(--blue-500);border-radius:12px;padding:.7rem 1.1rem;font-weight:800;color:var(--blue-600);font-size:.9rem}
+.why-sticky .btn{margin-top:2rem}
+.why-list{display:flex;flex-direction:column;gap:1.2rem}
+.why-card{display:flex;gap:1.3rem;align-items:flex-start;background:linear-gradient(180deg,#fff,var(--ice));border:1.5px solid var(--line);border-radius:18px;padding:1.6rem 1.5rem;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s}
+.why-card:hover{transform:translateY(-6px) translateX(-4px);box-shadow:0 22px 44px rgba(7,26,51,.12);border-color:var(--blue-400)}
+.why-card b{width:52px;height:52px;flex:0 0 52px;border-radius:14px;background:linear-gradient(140deg,var(--blue-500),var(--blue-600));color:#fff;display:grid;place-items:center;font-size:1.25rem;box-shadow:0 10px 20px rgba(18,115,235,.3)}
+.why-card h3{font-family:var(--display);font-size:1.2rem;font-weight:700}
+.why-card p{color:var(--muted);font-size:.95rem}
+.why-card.c24{background:linear-gradient(135deg,var(--navy-900),var(--blue-600));border:none;color:#fff}
+.why-card.c24 b{background:rgba(255,255,255,.15);font-family:var(--display);font-size:1.5rem;font-weight:800}
+.why-card.c24 p{color:#CFE2F7}
+
+/* خطوات العمل */
+.process{margin-top:5rem;border-top:1.5px dashed var(--line);padding-top:3.5rem}
+.process h3{font-family:var(--display);font-size:1.6rem;font-weight:700;margin-bottom:2.4rem;display:flex;align-items:center;gap:.8rem}
+.process h3::after{content:'';flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 10px,transparent 10px 18px)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.step{position:relative;padding:1.4rem 1.2rem;border-radius:16px;background:var(--ice);border:1.5px solid var(--line);transition:.35s var(--ease)}
+.step:hover{background:#fff;border-color:var(--blue-400);transform:translateY(-5px);box-shadow:0 18px 36px rgba(7,26,51,.1)}
+.step i{font-style:normal;font-family:var(--display);font-weight:800;font-size:1rem;color:#fff;background:var(--blue-600);width:38px;height:38px;border-radius:11px;display:grid;place-items:center;margin-bottom:.9rem;box-shadow:0 8px 16px rgba(18,115,235,.3)}
+.step h4{font-family:var(--display);font-size:1.05rem;font-weight:700}
+.step p{font-size:.85rem;color:var(--muted)}
+
+/* ===================== شريط الدعوة ===================== */
+.cta-band{position:relative;background:linear-gradient(140deg,var(--navy-950),var(--navy-800));color:#fff;padding:6rem 0;overflow:hidden;text-align:center}
+/* 🖼️ cta.jpg — خلفية خافتة */
+.cta-photo{position:absolute;inset:0;background:url('./cta.jpg') center/cover no-repeat;opacity:.18}
+.cta-band .glow{position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(18,115,235,.3),transparent 65%);top:-240px;right:50%;transform:translateX(50%)}
+.cta-band .wrap{position:relative;z-index:2}
+.cta-band h2{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.25}
+.cta-band h2 .hl{color:var(--cyan)}
+.cta-band p{color:#B9CFE8;max-width:34rem;margin:1rem auto 2.2rem;font-size:1.08rem}
+.road{position:relative;height:4px;width:min(720px,85%);margin:3.4rem auto 0;border-radius:4px;background:rgba(255,255,255,.12);overflow:visible}
+.road::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,var(--cyan) 0 34px,transparent 34px 68px);animation:roadmove 1.4s linear infinite;border-radius:4px;opacity:.8}
+@keyframes roadmove{to{background-position:68px 0}}
+.road .car{position:absolute;top:-26px;font-size:1.6rem;animation:drive 7s linear infinite;direction:ltr}
+@keyframes drive{from{left:-40px}to{left:calc(100% + 40px)}}
+
+/* ===================== التواصل ===================== */
+.contact{padding:6.5rem 0;background:linear-gradient(180deg,var(--ice),#fff)}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.c-card{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:1.9rem 1.5rem;text-align:center;transition:.35s var(--ease);position:relative;overflow:hidden}
+.c-card::before{content:'';position:absolute;inset:0;background:linear-gradient(150deg,var(--blue-500),var(--blue-600));opacity:0;transition:opacity .35s}
+.c-card>*{position:relative;z-index:1}
+.c-card:hover{transform:translateY(-7px);border-color:var(--blue-500);box-shadow:0 22px 44px rgba(18,115,235,.18)}
+.c-card:hover::before{opacity:1}
+.c-card:hover strong,.c-card:hover span{color:#fff}
+.c-ic{width:58px;height:58px;margin:0 auto 1rem;border-radius:16px;background:rgba(18,115,235,.1);border:1.5px solid rgba(18,115,235,.25);display:grid;place-items:center;font-size:1.5rem;color:var(--blue-600);transition:.3s}
+.c-card:hover .c-ic{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.4);color:#fff}
+.c-card strong{display:block;font-family:var(--display);font-size:1.15rem;font-weight:700;color:var(--ink);transition:color .3s}
+.c-card span{display:block;color:var(--muted);font-size:.9rem;font-weight:700;margin-top:.25rem;transition:color .3s}
+.c-card.wa{background:linear-gradient(150deg,var(--blue-500),var(--blue-600));border:none}
+.c-card.wa::before{background:linear-gradient(150deg,var(--navy-900),var(--navy-800))}
+.c-card.wa .c-ic{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.4);color:#fff}
+.c-card.wa strong,.c-card.wa span{color:#fff}
+.c-card .wa-ic{width:26px;height:26px;fill:currentColor}
+
+/* ===================== التذييل ===================== */
+footer{background:var(--navy-950);color:#B9CFE8;padding:4.5rem 0 0;position:relative;overflow:hidden}
+footer::before{content:'AL DREES 4 CARS';position:absolute;bottom:-3rem;left:50%;transform:translateX(-50%);font-family:var(--display);font-weight:800;font-size:clamp(3rem,9vw,8rem);color:transparent;-webkit-text-stroke:1px rgba(108,201,255,.07);white-space:nowrap;direction:ltr;pointer-events:none}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:3rem;position:relative;z-index:1}
+.f-brand p{font-size:.92rem;margin:1rem 0 1.4rem;max-width:22rem;color:#8FA9C9}
+.f-social{display:flex;gap:.7rem}
+.f-social a{width:42px;height:42px;border-radius:12px;border:1.5px solid rgba(108,201,255,.3);display:grid;place-items:center;font-size:1rem;color:#fff;transition:.3s}
+.f-social a:hover{background:var(--blue-500);border-color:var(--blue-500);transform:translateY(-3px)}
+.f-col h4{font-family:var(--display);color:#fff;font-size:1.05rem;font-weight:700;margin-bottom:1.1rem}
+.f-col ul{display:flex;flex-direction:column;gap:.6rem;font-size:.92rem}
+.f-col a{transition:.25s;display:inline-block}
+.f-col a:hover{color:var(--cyan);transform:translateX(-4px)}
+.f-bottom{border-top:1px solid rgba(108,201,255,.12);padding:1.3rem 0;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-size:.85rem;position:relative;z-index:1}
+.f-bottom .f-links{display:flex;gap:1.4rem}
+.f-bottom a:hover{color:var(--cyan)}
+
+/* زر واتساب العائم */
+.wa-float{position:fixed;bottom:24px;left:24px;z-index:1500;width:60px;height:60px;border-radius:50%;background:linear-gradient(140deg,var(--blue-500),var(--blue-600));display:grid;place-items:center;box-shadow:0 14px 30px rgba(18,115,235,.45);transition:transform .3s var(--ease)}
+.wa-float:hover{transform:scale(1.1) rotate(6deg)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before,.wa-float::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid rgba(18,115,235,.5);animation:pulse 2.4s ease-out infinite}
+.wa-float::after{animation-delay:1.2s}
+@keyframes pulse{from{transform:scale(1);opacity:1}to{transform:scale(1.75);opacity:0}}
+
+/* ===================== التجاوب ===================== */
+@media(max-width:1024px){
+  .hero .wrap{grid-template-columns:1fr;gap:3rem}
+  .order-card{max-width:540px;transform:none}
+  .why-grid{grid-template-columns:1fr;gap:2.5rem}
+  .why-sticky{position:static}
+  .ba-grid{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .burger{display:block}
+  .nav .social-dot{display:none}
+}
+@media(max-width:640px){
+  .topbar{display:none}
+  .svc{grid-template-columns:1fr;gap:.9rem;padding:1.8rem 1rem}
+  .svc-num{font-size:2.4rem;text-align:right}
+  .svc-cta{justify-content:center}
+  .ba-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr}
+  .stat+.stat{border-inline-start:none;border-top:1.5px solid var(--line)}
+  .contact-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .hero{padding:3.5rem 0 6.5rem}
+  .trust{gap:1rem}
+}
+
+/* ===================== احترام تفضيل تقليل الحركة ===================== */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  .io.reveal{opacity:1;transform:none}
+  .lm>span{transform:none}
+  .ticker-track{animation:none;flex-wrap:wrap}
+  .ba-img{animation:none}
+  .road::before{animation:none}
+  .road .car{animation:none;left:45%}
+}
+
+/* ===================== تحسينات المراجعة ===================== */
+html{overflow-x:hidden;overflow-x:clip}
+body{overflow-x:visible}
+:root{--display:'Changa','Tahoma',sans-serif;--body:'Tajawal','Tahoma',sans-serif}
+a:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--blue-400);outline-offset:3px;border-radius:8px}
+.lm{padding-block:.14em;margin-block:-.14em}
+.nav{background:var(--navy-950)}
+.nav.scrolled{-webkit-backdrop-filter:blur(12px)}
+.logo-mark.has-img{background:#fff;color:transparent;box-shadow:0 6px 16px rgba(4,16,31,.25)}
+.logo-mark.has-img::after{display:none}
+.logo-mark.has-img .logo-img{object-fit:contain;padding:4px}
+.si{width:1.15em;height:1.15em;fill:currentColor;flex:none}
+.topbar .tb-social a,.topbar .tb-phone{display:inline-flex;align-items:center;gap:.4rem}
+.nav .social-dot .si,.f-social .si{width:18px;height:18px}
+.hero-grid-bg{-webkit-mask-image:radial-gradient(ellipse 90% 80% at 60% 20%,#000 30%,transparent 75%)}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4.4rem)}
+.ticker-track>div{min-width:100vw;justify-content:space-around}
+.ba{touch-action:pan-y}
+.ba-img{animation:none}
+.projects::before{font-size:clamp(3rem,9vw,7rem)}
+textarea{width:100%;padding:.68rem .9rem;border:1.6px solid var(--line);border-radius:12px;font-family:inherit;font-weight:700;font-size:.9rem;color:var(--ink);background:#fff;resize:vertical}
+textarea:focus{outline:none;border-color:var(--blue-500)}
+.chips span{padding:.55rem 1rem}
+.seg span{padding:.6rem .4rem}
+/* واتساب بلونه المعروف */
+.wa-float{background:#25D366;box-shadow:0 14px 30px rgba(37,211,102,.45);bottom:calc(20px + env(safe-area-inset-bottom))}
+.wa-float::before,.wa-float::after{border-color:rgba(37,211,102,.55)}
+.c-card.wa{background:linear-gradient(150deg,#2BE070,#1DA851)}
+/* شعارات التواصل */
+.c-ic.b-tt{background:#000;border-color:#000;color:#fff}
+.c-ic.b-sc{background:#FFFC00;border-color:#FFFC00;color:#000}
+.c-ic.b-ig{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fd5949 45%,#d6249f 60%,#285AEB 90%);border-color:transparent;color:#fff}
+.c-ic .si{width:28px;height:28px}
+.c-card:hover .c-ic.b-tt{background:#000;border-color:#fff;color:#fff}
+.c-card:hover .c-ic.b-sc{background:#FFFC00;border-color:#FFFC00;color:#000}
+.c-card:hover .c-ic.b-ig{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fd5949 45%,#d6249f 60%,#285AEB 90%);border-color:#fff;color:#fff}
+.f-social a:hover{color:#fff}
+.contact-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+@media(max-width:900px){
+  .noise{display:none}
+  .svc{grid-template-columns:80px 1fr;gap:1rem 1.4rem}
+  .svc-num{font-size:2.8rem}
+  .svc-cta{grid-column:1/-1;justify-content:center}
+}
+@media(max-width:640px){
+  .svc{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .contact-grid .c-card:first-child,.contact-grid .c-card.wa,.contact-grid .c-card:last-child{grid-column:1/-1}
+}
+@media(max-width:480px){.nav-cta{display:none}}
+.c-card .c-ic{display:grid;place-items:center;margin:0 auto 1rem}
+.c-card span[dir="ltr"]{white-space:nowrap}
+@media(max-width:640px){.contact-grid .c-card{padding:1.5rem .7rem}.c-card span{font-size:.8rem}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+<symbol id="i-tt" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+<symbol id="i-sc" viewBox="0 0 24 24"><path d="M12 2.5c-3 0-4.9 2.1-4.9 5v1.7c-.5.3-1.2.4-1.7.4-.5 0-.8.3-.8.7 0 .4.5.7 1.3.9.4.1.7.3.7.6 0 .6-1.4 2.7-3.5 3.1-.3.1-.4.3-.3.6.2.5 1.5.9 2.5 1 .1.3.2.7.3 1 .1.3.3.4.6.4.5 0 1.3-.3 2.2-.1 1.1.2 1.8 1.8 3.6 1.8s2.5-1.6 3.6-1.8c.9-.2 1.7.1 2.2.1.3 0 .5-.1.6-.4.1-.3.2-.7.3-1 1-.1 2.3-.5 2.5-1 .1-.3 0-.5-.3-.6-2.1-.4-3.5-2.5-3.5-3.1 0-.3.3-.5.7-.6.8-.2 1.3-.5 1.3-.9 0-.4-.3-.7-.8-.7-.5 0-1.2-.1-1.7-.4V7.5c0-2.9-1.9-5-4.9-5z"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3"/></symbol>
+</defs></svg>
+
+<div class="noise" aria-hidden="true"></div>
+
+<!-- زر واتساب العائم -->
+<a class="wa-float" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أرغب%20في%20التواصل%20مع%20مركز%20الدريس" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+  <svg><use href="#i-wa"/></svg>
+</a>
+
+<!-- الشريط العلوي -->
+<div class="topbar">
+  <div class="wrap">
+    <a class="tb-phone" href="tel:+966538999056">☎ <span>للحجز والاستفسار:</span> <b dir="ltr">053 899 9056</b></a>
+    <div class="tb-social">
+      <a href="https://www.tiktok.com/@aldrees4cars" target="_blank" rel="noopener"><svg class="si"><use href="#i-tt"/></svg> TikTok</a>
+      <a href="https://snapchat.com/t/Qqh3QoXN" target="_blank" rel="noopener"><svg class="si"><use href="#i-sc"/></svg> Snapchat</a>
+      <a href="https://www.instagram.com/aldrees4cars" target="_blank" rel="noopener"><svg class="si"><use href="#i-ig"/></svg> Instagram</a>
+      <a href="https://wa.me/966538999056" target="_blank" rel="noopener">واتساب المركز</a>
+    </div>
+  </div>
+</div>
+
+<!-- التنقل -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#home" class="logo">
+      <span class="logo-mark">د<img class="logo-img" src="./logo.png" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></span>
+      <span class="logo-txt">
+        <strong>مركز الدريس</strong>
+        <small dir="ltr">AL DREES 4 CARS</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="التنقل الرئيسي">
+      <a href="#home" class="active">الرئيسية</a>
+      <a href="#services">الخدمات</a>
+      <a href="#projects">قبل وبعد</a>
+      <a href="#about">عن المركز</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+    <div class="nav-side">
+      <a class="social-dot" href="https://www.tiktok.com/@aldrees4cars" target="_blank" rel="noopener" aria-label="تيك توك"><svg class="si"><use href="#i-tt"/></svg></a>
+      <a class="social-dot" href="https://www.instagram.com/aldrees4cars" target="_blank" rel="noopener" aria-label="انستقرام"><svg class="si"><use href="#i-ig"/></svg></a>
+      <a class="btn btn-primary nav-cta" style="padding:.65rem 1.3rem;font-size:.9rem" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أرغب%20في%20التواصل%20مع%20مركز%20الدريس" target="_blank" rel="noopener">تواصل معنا</a>
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mMenu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- قائمة الجوال -->
+<div class="m-menu" id="mMenu" aria-hidden="true">
+  <div class="m-head">
+    <a href="#home" class="logo">
+      <span class="logo-mark">د<img class="logo-img" src="./logo.png" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></span>
+      <span class="logo-txt"><strong>مركز الدريس</strong><small dir="ltr">AL DREES 4 CARS</small></span>
+    </a>
+    <button class="m-close" id="mClose" aria-label="إغلاق القائمة">✕</button>
+  </div>
+  <nav>
+    <a href="#home">الرئيسية <span>/01</span></a>
+    <a href="#services">الخدمات <span>/02</span></a>
+    <a href="#projects">قبل وبعد <span>/03</span></a>
+    <a href="#about">عن المركز <span>/04</span></a>
+    <a href="#contact">تواصل <span>/05</span></a>
+  </nav>
+  <div class="m-foot">
+    <a class="btn btn-primary" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أرغب%20في%20حجز%20موعد%20لصيانة%20سيارتي" target="_blank" rel="noopener">احجز موعدك</a>
+    <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.5)" href="tel:+966538999056">☎ اتصل الآن</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ===================== الترويسة ===================== -->
+<section class="hero" id="home">
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-glow g2" aria-hidden="true"></div>
+  <div class="hero-watermark" id="watermark" aria-hidden="true">AL DREES</div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker io reveal">مركز متخصص في صيانة وإصلاح السيارات</p>
+      <h1 class="io" style="--d:.1s">
+        <span class="lm"><span>نرجّع سيارتك</span></span>
+        <span class="lm" style="--d:.18s"><span><em class="hl">بأفضل صورة.</em></span></span>
+      </h1>
+      <p class="lead io reveal" style="--d:.3s">من الكهرباء والميكانيكا إلى السمكرة والبوهية — خدمة متكاملة لسيارتك بجودة واهتمام بالتفاصيل.</p>
+      <div class="hero-cta io reveal" style="--d:.42s">
+        <a class="btn btn-primary" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أرغب%20في%20حجز%20موعد%20لصيانة%20سيارتي" target="_blank" rel="noopener">
+          احجز موعدك
+          <svg class="wa-ic"><use href="#i-wa"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#services">استكشف الخدمات</a>
+      </div>
+      <ul class="trust io reveal" style="--d:.55s">
+        <li><b>✓</b><div><strong>خدمة متكاملة</strong><span>كل احتياجات سيارتك</span></div></li>
+        <li><b>◆</b><div><strong>عناية بالتفاصيل</strong><span>من التشخيص حتى التسليم</span></div></li>
+        <li><b>☎</b><div><strong>تواصل مباشر</strong><span>واتساب المركز</span></div></li>
+      </ul>
+    </div>
+
+    <!-- بطاقة الحجز (أمر شغل) -->
+    <form class="order-card io reveal" id="orderForm" style="--d:.35s">
+      <div class="order-head">
+        <span class="plate">مركز الدريس <i dir="ltr">4 CARS</i></span>
+        <span class="order-no" data-scramble="WORK ORDER #001">WORK ORDER #001</span>
+      </div>
+      <h3>احجز خدمتك خلال دقيقة</h3>
+
+      <div class="fgroup">
+        <span class="flabel">اختر الخدمة</span>
+        <div class="chips">
+          <label><input type="radio" name="service" value="ميكانيكا" checked><span>⚙ ميكانيكا</span></label>
+          <label><input type="radio" name="service" value="كهرباء"><span>⚡ كهرباء</span></label>
+          <label><input type="radio" name="service" value="سمكرة"><span>🚘 سمكرة</span></label>
+          <label><input type="radio" name="service" value="بوهية"><span>🎨 بوهية</span></label>
+        </div>
+      </div>
+
+      <div class="fgroup">
+        <label class="flabel" for="carSel">نوع السيارة</label>
+        <select id="carSel">
+          <option>جميع السيارات</option>
+          <option>Toyota</option>
+          <option>Hyundai</option>
+          <option>Nissan</option>
+          <option>Ford</option>
+          <option>سيارة أخرى</option>
+        </select>
+      </div>
+
+      <div class="frow">
+        <div class="fgroup">
+          <label class="flabel" for="reqSel">نوع الطلب</label>
+          <select id="reqSel">
+            <option>فحص / إصلاح</option>
+            <option>صيانة دورية</option>
+            <option>حادث</option>
+          </select>
+        </div>
+        <div class="fgroup">
+          <span class="flabel">الأولوية</span>
+          <div class="seg prio">
+            <label><input type="radio" name="prio" value="عادية" checked><span>عادية</span></label>
+            <label><input type="radio" name="prio" value="عاجلة"><span>عاجلة ⚡</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="fgroup">
+        <span class="flabel">طريقة التواصل</span>
+        <div class="seg">
+          <label><input type="radio" name="contact" value="واتساب" checked><span>واتساب</span></label>
+          <label><input type="radio" name="contact" value="اتصال"><span>اتصال</span></label>
+        </div>
+      </div>
+
+      <div class="fgroup">
+        <label class="flabel" for="noteTxt">ملاحظات (اختياري)</label>
+        <textarea id="noteTxt" rows="2" maxlength="300" placeholder="مثال: صوت في الفرامل / موديل 2019"></textarea>
+      </div>
+
+      <button class="btn btn-primary order-btn" type="submit" id="orderBtn">تواصل الآن عبر واتساب</button>
+      <p class="order-note">سيتم تجهيز رسالتك بتفاصيل الطلب وإرسالها مباشرة إلى واتساب المركز.</p>
+    </form>
+  </div>
+</section>
+
+<!-- الشريط المتحرك -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div>
+      <b>كهرباء السيارات</b><b>ميكانيكا</b><b>سمكرة</b><b>بوهية</b><b>فحص وتشخيص</b><b>صيانة دورية</b><b>إصلاح حوادث</b><b dir="ltr">AL DREES 4 CARS</b>
+    </div>
+    <div>
+      <b>كهرباء السيارات</b><b>ميكانيكا</b><b>سمكرة</b><b>بوهية</b><b>فحص وتشخيص</b><b>صيانة دورية</b><b>إصلاح حوادث</b><b dir="ltr">AL DREES 4 CARS</b>
+    </div>
+  </div>
+</div>
+
+<!-- الأرقام -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid io reveal">
+      <div class="stat"><b data-count="4" data-pad="2">0</b><span>تخصصات تحت سقف واحد</span><small>كهرباء · ميكانيكا · سمكرة · بوهية</small></div>
+      <div class="stat"><b data-count="24">0</b><span>اهتمام بالعميل</span><small>هدفنا تجربة أفضل للعميل</small></div>
+      <div class="stat"><b data-count="100" data-suffix="%">0</b><span>عناية بالتفاصيل</span><small>من التشخيص حتى التسليم</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== الخدمات ===================== -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head io">
+      <span class="sec-kicker">01 / خدماتنا</span>
+      <h2 class="sec-title"><span class="lm"><span>خدماتنا الرئيسية</span></span></h2>
+      <p class="sec-sub">خدمات صيانة وإصلاح مصممة لتغطي أهم احتياجات سيارتك.</p>
+      <a href="#contact" class="sec-link">تواصل معنا ↗</a>
+    </div>
+
+    <div class="svc-list">
+      <article class="svc io reveal">
+        <div class="svc-num">01</div>
+        <div class="svc-body">
+          <h3><span class="svc-ico">⚡</span> كهرباء السيارات</h3>
+          <p>فحص الأنظمة الكهربائية والإلكترونية وتشخيص الأعطال وإصلاحها.</p>
+          <ul class="svc-tags"><li>أنظمة كهربائية</li><li>أنظمة إلكترونية</li><li>تشخيص الأعطال</li><li>إصلاح دقيق</li></ul>
+        </div>
+        <a class="svc-cta" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أستفسر%20عن%20خدمة%20كهرباء%20السيارات" target="_blank" rel="noopener">استفسر عن الخدمة ↗</a>
+      </article>
+
+      <article class="svc io reveal" style="--d:.08s">
+        <div class="svc-num">02</div>
+        <div class="svc-body">
+          <h3><span class="svc-ico">⚙</span> الميكانيكا</h3>
+          <p>صيانة المحرك والفرامل والتكييف والتعليق والصيانة الدورية.</p>
+          <ul class="svc-tags"><li>المحرك</li><li>الفرامل</li><li>التكييف</li><li>التعليق</li><li>صيانة دورية</li></ul>
+        </div>
+        <a class="svc-cta" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أستفسر%20عن%20خدمة%20الميكانيكا" target="_blank" rel="noopener">استفسر عن الخدمة ↗</a>
+      </article>
+
+      <article class="svc io reveal" style="--d:.16s">
+        <div class="svc-num">03</div>
+        <div class="svc-body">
+          <h3><span class="svc-ico">🚘</span> السمكرة</h3>
+          <p>إصلاح أضرار الحوادث وتعديل الهيكل وإعادة تناسق أجزاء السيارة.</p>
+          <ul class="svc-tags"><li>أضرار الحوادث</li><li>تعديل الهيكل</li><li>تناسق الأجزاء</li></ul>
+        </div>
+        <a class="svc-cta" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أستفسر%20عن%20خدمة%20السمكرة" target="_blank" rel="noopener">استفسر عن الخدمة ↗</a>
+      </article>
+
+      <article class="svc io reveal" style="--d:.24s">
+        <div class="svc-num">04</div>
+        <div class="svc-body">
+          <h3><span class="svc-ico">🎨</span> البوهية</h3>
+          <p>دهان وتجديد القطع مع اهتمام باللون والتشطيب والمظهر النهائي.</p>
+          <ul class="svc-tags"><li>دهان</li><li>تجديد القطع</li><li>تطابق اللون</li><li>تشطيب نهائي</li></ul>
+        </div>
+        <a class="svc-cta" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أستفسر%20عن%20خدمة%20البوهية" target="_blank" rel="noopener">استفسر عن الخدمة ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== قبل وبعد ===================== -->
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="sec-head io">
+      <span class="sec-kicker">02 / معرض الأعمال</span>
+      <h2 class="sec-title"><span class="lm"><span>أعمالنا قبل وبعد</span></span></h2>
+      <p class="sec-sub">اسحب المؤشر على الصور وشاهد الفرق في أعمال الإصلاح والتجديد.</p>
+    </div>
+
+    <div class="ba-grid">
+      <figure class="ba-card io reveal">
+        <div class="ba" data-ba style="--pos:62%">
+          <!-- 🖼️ الزوج الأول: before1.jpg + after1.jpg -->
+          <img class="ba-img" src="./after1.jpg" decoding="async" onerror="var e=(this.dataset.t||'jpeg,png,webp,JPG,JPEG,PNG').split(',');var x=e.shift();if(x){this.dataset.t=e.join(',');this.src=this.src.replace(/\.[A-Za-z]+$/,'.'+x)}else{this.style.display='none'}" alt="بعد — إصلاح حادث وسمكرة">
+          <div class="ba-top"><img src="./before1.jpg" decoding="async" onerror="var e=(this.dataset.t||'jpeg,png,webp,JPG,JPEG,PNG').split(',');var x=e.shift();if(x){this.dataset.t=e.join(',');this.src=this.src.replace(/\.[A-Za-z]+$/,'.'+x)}else{this.style.display='none'}" alt="قبل — إصلاح حادث وسمكرة"></div>
+          <span class="ba-tag t-before">قبل</span>
+          <span class="ba-tag t-after">بعد</span>
+          <div class="ba-line" aria-hidden="true"></div>
+          <button class="ba-handle" type="button" role="slider" aria-label="اسحب للمقارنة — إصلاح حادث وسمكرة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">↔</button>
+        </div>
+        <figcaption>
+          <div><h3>إصلاح حادث وسمكرة</h3><p>إعادة الهيكل والمظهر الخارجي</p></div>
+          <span class="ba-num">01</span>
+        </figcaption>
+      </figure>
+
+      <figure class="ba-card io reveal" style="--d:.12s">
+        <div class="ba" data-ba style="--pos:62%">
+          <!-- 🖼️ الزوج الثاني: before2.jpg + after2.jpg -->
+          <img class="ba-img" src="./after2.jpg" decoding="async" onerror="var e=(this.dataset.t||'jpeg,png,webp,JPG,JPEG,PNG').split(',');var x=e.shift();if(x){this.dataset.t=e.join(',');this.src=this.src.replace(/\.[A-Za-z]+$/,'.'+x)}else{this.style.display='none'}" alt="بعد — تجديد ودهان">
+          <div class="ba-top"><img src="./before2.jpg" decoding="async" onerror="var e=(this.dataset.t||'jpeg,png,webp,JPG,JPEG,PNG').split(',');var x=e.shift();if(x){this.dataset.t=e.join(',');this.src=this.src.replace(/\.[A-Za-z]+$/,'.'+x)}else{this.style.display='none'}" alt="قبل — تجديد ودهان"></div>
+          <span class="ba-tag t-before">قبل</span>
+          <span class="ba-tag t-after">بعد</span>
+          <div class="ba-line" aria-hidden="true"></div>
+          <button class="ba-handle" type="button" role="slider" aria-label="اسحب للمقارنة — تجديد ودهان" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">↔</button>
+        </div>
+        <figcaption>
+          <div><h3>تجديد ودهان</h3><p>تشطيب ولون ومظهر نهائي</p></div>
+          <span class="ba-num">02</span>
+        </figcaption>
+      </figure>
+
+      <figure class="ba-card io reveal" style="--d:.24s">
+        <div class="ba" data-ba style="--pos:62%">
+          <!-- 🖼️ الزوج الثالث: before3.jpg + after3.jpg -->
+          <img class="ba-img" src="./after3.jpg" decoding="async" onerror="var e=(this.dataset.t||'jpeg,png,webp,JPG,JPEG,PNG').split(',');var x=e.shift();if(x){this.dataset.t=e.join(',');this.src=this.src.replace(/\.[A-Za-z]+$/,'.'+x)}else{this.style.display='none'}" alt="بعد — إصلاح وتجهيز">
+          <div class="ba-top"><img src="./before3.jpg" decoding="async" onerror="var e=(this.dataset.t||'jpeg,png,webp,JPG,JPEG,PNG').split(',');var x=e.shift();if(x){this.dataset.t=e.join(',');this.src=this.src.replace(/\.[A-Za-z]+$/,'.'+x)}else{this.style.display='none'}" alt="قبل — إصلاح وتجهيز"></div>
+          <span class="ba-tag t-before">قبل</span>
+          <span class="ba-tag t-after">بعد</span>
+          <div class="ba-line" aria-hidden="true"></div>
+          <button class="ba-handle" type="button" role="slider" aria-label="اسحب للمقارنة — إصلاح وتجهيز" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">↔</button>
+        </div>
+        <figcaption>
+          <div><h3>إصلاح وتجهيز</h3><p>نتيجة العمل قبل وبعد</p></div>
+          <span class="ba-num">03</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="ba-hint io reveal"><b>↔</b> اسحب المؤشر على الصور لمشاهدة الفرق</p>
+  </div>
+</section>
+
+<!-- ===================== لماذا المركز ===================== -->
+<section class="why" id="about">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-sticky io">
+        <span class="sec-kicker">03 / لماذا مركز الدريس؟</span>
+        <h2 class="sec-title"><span class="lm"><span>تجربة واضحة واحترافية</span></span><span class="lm" style="--d:.15s"><span>من استقبال السيارة حتى تسليمها.</span></span></h2>
+        <p class="sec-sub">في مركز الدريس كل خطوة محسوبة — من لحظة وصول سيارتك، إلى التشخيص، إلى التنفيذ، وحتى التسليم بأفضل صورة.</p>
+        <div class="why-plate">◆ من التشخيص حتى التسليم — عناية بالتفاصيل</div>
+        <br>
+        <a class="btn btn-primary" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أرغب%20في%20التواصل%20مع%20مركز%20الدريس" target="_blank" rel="noopener">تواصل مع المركز</a>
+      </div>
+
+      <div class="why-list">
+        <div class="why-card io reveal"><b>✓</b><div><h3>تشخيص دقيق</h3><p>نحدد المشكلة قبل بدء العمل.</p></div></div>
+        <div class="why-card io reveal" style="--d:.1s"><b>◆</b><div><h3>جودة التنفيذ</h3><p>اهتمام بالتفاصيل في كل مرحلة.</p></div></div>
+        <div class="why-card io reveal" style="--d:.2s"><b>▣</b><div><h3>خدمة متكاملة</h3><p>أكثر من تخصص في مكان واحد.</p></div></div>
+        <div class="why-card io reveal" style="--d:.3s"><b>↗</b><div><h3>تواصل مباشر</h3><p>سهولة الاستفسار والحجز.</p></div></div>
+        <div class="why-card c24 io reveal" style="--d:.4s"><b data-count="24">0</b><div><h3>اهتمام بالعميل</h3><p>هدفنا تجربة أفضل للعميل — متابعة مستمرة لحالة سيارتك وتحديثك أولاً بأول.</p></div></div>
+      </div>
+    </div>
+
+    <div class="process io reveal">
+      <h3>رحلة سيارتك داخل المركز</h3>
+      <div class="steps">
+        <div class="step io reveal"><i>١</i><h4>الاستقبال والفحص</h4><p>نستمع لملاحظاتك ونسجّل حالة السيارة بدقة.</p></div>
+        <div class="step io reveal" style="--d:.1s"><i>٢</i><h4>التشخيص الدقيق</h4><p>نحدد المشكلة قبل بدء العمل.</p></div>
+        <div class="step io reveal" style="--d:.2s"><i>٣</i><h4>التنفيذ باهتمام</h4><p>جودة التنفيذ والتفاصيل في كل مرحلة.</p></div>
+        <div class="step io reveal" style="--d:.3s"><i>٤</i><h4>الفحص والتسليم</h4><p>تسليم السيارة بأفضل صورة.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== شريط الدعوة ===================== -->
+<section class="cta-band">
+  <div class="cta-photo" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 class="io">
+      <span class="lm"><span>جاهز تبدأ؟</span></span>
+      <span class="lm" style="--d:.15s"><span>خلّ سيارتك ترجع <span class="hl">بأفضل صورة.</span></span></span>
+    </h2>
+    <p class="io reveal" style="--d:.3s">أرسل لنا نوع السيارة والمشكلة عبر واتساب، وفريق المركز يساعدك في الخطوة التالية.</p>
+    <a class="btn btn-primary io reveal" style="--d:.4s" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أرغب%20في%20معرفة%20الخدمة%20المناسبة%20لسيارتي" target="_blank" rel="noopener">
+      تواصل عبر واتساب
+      <svg class="wa-ic"><use href="#i-wa"/></svg>
+    </a>
+    <div class="road" aria-hidden="true"><span class="car">🚗</span></div>
+  </div>
+</section>
+
+<!-- ===================== التواصل ===================== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head io">
+      <span class="sec-kicker">04 / تواصل معنا</span>
+      <h2 class="sec-title"><span class="lm"><span>تحتاج مساعدة؟</span></span></h2>
+      <p class="sec-sub">تواصل مع مركز الدريس مباشرة للحصول على المعلومات والحجز.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a class="c-card io reveal" href="tel:+966538999056">
+        <span class="c-ic">☎</span>
+        <strong>اتصل بنا</strong>
+        <span dir="ltr">053 899 9056</span>
+      </a>
+      <a class="c-card wa io reveal" style="--d:.1s" href="https://wa.me/966538999056?text=السلام%20عليكم،%20أرغب%20في%20التواصل%20مع%20مركز%20الدريس" target="_blank" rel="noopener">
+        <span class="c-ic"><svg class="wa-ic"><use href="#i-wa"/></svg></span>
+        <strong>واتساب</strong>
+        <span>مراسلة فورية</span>
+      </a>
+      <a class="c-card io reveal" style="--d:.2s" href="https://www.tiktok.com/@aldrees4cars" target="_blank" rel="noopener">
+        <span class="c-ic b-tt"><svg class="si"><use href="#i-tt"/></svg></span>
+        <strong>TikTok</strong>
+        <span dir="ltr">@aldrees4cars</span>
+      </a>
+      <a class="c-card io reveal" style="--d:.3s" href="https://snapchat.com/t/Qqh3QoXN" target="_blank" rel="noopener">
+        <span class="c-ic b-sc"><svg class="si"><use href="#i-sc"/></svg></span>
+        <strong>Snapchat</strong>
+        <span dir="ltr">AL DREES 4 CARS</span>
+      </a>
+      <!-- ⚠️ تأكد من اسم حساب الانستقرام وعدّله هنا وفي الأعلى وفي الفوتر -->
+      <a class="c-card io reveal" style="--d:.4s" href="https://www.instagram.com/aldrees4cars" target="_blank" rel="noopener">
+        <span class="c-ic b-ig"><svg class="si"><use href="#i-ig"/></svg></span>
+        <strong>Instagram</strong>
+        <span dir="ltr">@aldrees4cars</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== التذييل ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">د<img class="logo-img" src="./logo.png" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"></span>
+          <span class="logo-txt"><strong style="color:#fff">مركز الدريس</strong><small dir="ltr">AL DREES 4 CARS</small></span>
+        </a>
+        <p>مركز الدريس لصيانة السيارات — كهرباء، ميكانيكا، سمكرة وبوهية.</p>
+        <div class="f-social">
+          <a href="https://www.tiktok.com/@aldrees4cars" target="_blank" rel="noopener" aria-label="تيك توك"><svg class="si"><use href="#i-tt"/></svg></a>
+          <a href="https://snapchat.com/t/Qqh3QoXN" target="_blank" rel="noopener" aria-label="سناب شات"><svg class="si"><use href="#i-sc"/></svg></a>
+          <a href="https://www.instagram.com/aldrees4cars" target="_blank" rel="noopener" aria-label="انستقرام"><svg class="si"><use href="#i-ig"/></svg></a>
+          <a href="https://wa.me/966538999056" target="_blank" rel="noopener" aria-label="واتساب"><svg style="width:18px;height:18px;fill:#fff"><use href="#i-wa"/></svg></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>الخدمات</h4>
+        <ul>
+          <li><a href="#services">الكهرباء</a></li>
+          <li><a href="#services">الميكانيكا</a></li>
+          <li><a href="#services">السمكرة</a></li>
+          <li><a href="#services">البوهية</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>المركز</h4>
+        <ul>
+          <li><a href="#about">عن المركز</a></li>
+          <li><a href="#projects">أعمالنا</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>تواصل</h4>
+        <ul>
+          <li><a href="https://wa.me/966538999056" target="_blank" rel="noopener">واتساب</a></li>
+          <li><a href="https://www.instagram.com/aldrees4cars" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@aldrees4cars" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://snapchat.com/t/Qqh3QoXN" target="_blank" rel="noopener">Snapchat</a></li>
+          <li><a href="tel:+966538999056" dir="ltr">053 899 9056</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© مركز الدريس لصيانة السيارات. جميع الحقوق محفوظة.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- التنقل عند التمرير ---------- */
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 30); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* ---------- قائمة الجوال ---------- */
+  var menu = document.getElementById('mMenu');
+  var burger = document.getElementById('burger');
+  var closeButton = document.getElementById('mClose');
+  function openMenu(){
+    menu.classList.add('open');
+    menu.setAttribute('aria-hidden','false');
+    burger.setAttribute('aria-expanded','true');
+    document.body.style.overflow='hidden';
+    window.setTimeout(function(){ closeButton.focus(); }, 50);
+  }
+  function closeMenu(returnFocus){
+    menu.classList.remove('open');
+    menu.setAttribute('aria-hidden','true');
+    burger.setAttribute('aria-expanded','false');
+    document.body.style.overflow='';
+    if(returnFocus) burger.focus();
+  }
+  burger.addEventListener('click', openMenu);
+  closeButton.addEventListener('click', function(){ closeMenu(true); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ closeMenu(false); }); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && menu.classList.contains('open')) closeMenu(true);
+  });
+
+  /* ---------- تأثير فك التشفير (Scramble) ---------- */
+  var CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#/';
+  function scramble(el){
+    var text = el.dataset.scramble;
+    if(REDUCED){ el.textContent = text; return; }
+    var frame = 0;
+    var timer = setInterval(function(){
+      frame++;
+      var done = Math.floor(frame / 2.2);
+      el.textContent = text.split('').map(function(ch,i){
+        if(ch === ' ') return ' ';
+        return i < done ? ch : CHARS[Math.floor(Math.random()*CHARS.length)];
+      }).join('');
+      if(done >= text.length){ clearInterval(timer); el.textContent = text; }
+    }, 34);
+  }
+
+  /* ---------- العدّادات ---------- */
+  function countUp(el){
+    var target = +el.dataset.count;
+    var suffix = el.dataset.suffix || '';
+    var pad = +(el.dataset.pad || 0);
+    function fmt(v){ var s = String(v); if(pad) s = s.padStart(pad,'0'); return s + suffix; }
+    if(REDUCED){ el.textContent = fmt(target); return; }
+    var dur = 1400, start = performance.now();
+    function tick(now){
+      var p = Math.min(1,(now-start)/dur);
+      var e = 1 - Math.pow(1-p,3);
+      el.textContent = fmt(Math.round(target*e));
+      if(p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------- الظهور عند التمرير ---------- */
+  /* ---------- الظهور عند التمرير + تمييز الرابط النشط ---------- */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        en.target.classList.add('in');
+        en.target.querySelectorAll('[data-count]').forEach(countUp);
+        if(en.target.dataset.count) countUp(en.target);
+        en.target.querySelectorAll('[data-scramble]').forEach(scramble);
+        if(en.target.dataset.scramble) scramble(en.target);
+        io.unobserve(en.target);
+      });
+    }, {threshold:.16, rootMargin:'0px 0px -7% 0px'});
+    document.querySelectorAll('.io').forEach(function(el){ io.observe(el); });
+
+    var links = document.querySelectorAll('.nav-links a');
+    var secObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id); });
+        }
+      });
+    }, {rootMargin:'-40% 0px -55% 0px'});
+    ['home','services','projects','about','contact'].forEach(function(id){
+      var s = document.getElementById(id); if(s) secObs.observe(s);
+    });
+  } else {
+    document.querySelectorAll('.io').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- مقارض قبل / بعد ---------- */
+  document.querySelectorAll('[data-ba]').forEach(function(ba){
+    var handle = ba.querySelector('.ba-handle');
+    function setPos(p){
+      p = Math.max(4, Math.min(96, p));
+      ba.style.setProperty('--pos', p + '%');
+      handle.setAttribute('aria-valuenow', Math.round(p));
+    }
+    function fromEvent(e){
+      var r = ba.getBoundingClientRect();
+      setPos(((e.clientX - r.left) / r.width) * 100);
+    }
+    ba.addEventListener('pointerdown', function(e){
+      e.preventDefault();
+      ba.setPointerCapture(e.pointerId);
+      fromEvent(e);
+      function mv(ev){ fromEvent(ev); }
+      function up(){ ba.removeEventListener('pointermove', mv); ba.removeEventListener('pointerup', up); ba.removeEventListener('pointercancel', up); }
+      ba.addEventListener('pointermove', mv);
+      ba.addEventListener('pointerup', up);
+      ba.addEventListener('pointercancel', up);
+    });
+    handle.addEventListener('keydown', function(e){
+      var cur = parseFloat(getComputedStyle(ba).getPropertyValue('--pos')) || 50;
+      if(e.key === 'ArrowLeft'){ setPos(cur - 5); e.preventDefault(); }
+      if(e.key === 'ArrowRight'){ setPos(cur + 5); e.preventDefault(); }
+    });
+  });
+
+  /* ---------- نموذج الحجز → واتساب / اتصال ---------- */
+  var form = document.getElementById('orderForm');
+  var btn  = document.getElementById('orderBtn');
+  var PHONE = '966538999056';
+  form.querySelectorAll('input[name="contact"]').forEach(function(r){
+    r.addEventListener('change', function(){
+      var c = form.querySelector('input[name="contact"]:checked').value;
+      btn.textContent = (c === 'اتصال') ? '☎ اتصل الآن بالمركز' : 'تواصل الآن عبر واتساب';
+    });
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var service = form.querySelector('input[name="service"]:checked').value;
+    var car     = document.getElementById('carSel').value;
+    var req     = document.getElementById('reqSel').value;
+    var note    = document.getElementById('noteTxt').value.trim();
+    var prio    = form.querySelector('input[name="prio"]:checked').value;
+    var contact = form.querySelector('input[name="contact"]:checked').value;
+    if(contact === 'اتصال'){ window.location.href = 'tel:+' + PHONE; return; }
+    var text = 'السلام عليكم، أرغب بحجز موعد لصيانة سيارتي لدى مركز الدريس 🚗\n' +
+      '▪️ الخدمة: ' + service + '\n' +
+      '▪️ نوع السيارة: ' + car + '\n' +
+      '▪️ نوع الطلب: ' + req + '\n' +
+      '▪️ الأولوية: ' + prio + '\n' + (note ? '▪️ ملاحظات: ' + note + '\n' : '') +
+      'بانتظار ردّكم، شاكر لكم.';
+    var url = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(text);
+    var w = window.open(url, '_blank'); if(w){ w.opener = null; } else { window.location.href = url; }
+  });
+
+  /* ---------- حركة خفيفة للعلامة المائية ---------- */
+  var wm = document.getElementById('watermark');
+  if(wm && !REDUCED){
+    window.addEventListener('scroll', function(){
+      var y = window.scrollY;
+      if(y < 900) wm.style.transform = 'translateY(' + (y * .18) + 'px)';
+    }, {passive:true});
+  }
+})();
+</script>
+</body>
+</html>
